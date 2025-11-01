@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page with JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌟 Interactive Web Playground</h1>
+    <p>Explore events, interactivity, and form validation!</p>
+  </header>
+
+  <!-- Light/Dark Mode Toggle -->
+  <section class="feature">
+    <h2>🌙 Light/Dark Mode Toggle</h2>
+    <button id="theme-toggle">Toggle Theme</button>
+  </section>
+
+  <!-- Counter Game -->
+  <section class="feature">
+    <h2>🔢 Counter Challenge</h2>
+    <p>Click the button to increase your score!</p>
+    <p>Score: <span id="counter">0</span></p>
+    <button id="increment-btn">+1</button>
+    <button id="reset-btn">Reset</button>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section class="feature">
+    <h2>❓ FAQ Section</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">
+          <p>JavaScript is a programming language that enables interactive web pages. It's essential for modern web development!</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Why use event listeners?</button>
+        <div class="faq-answer">
+          <p>Event listeners allow your page to respond to user actions like clicks, key presses, and mouse movements.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is form validation?</button>
+        <div class="faq-answer">
+          <p>Form validation ensures users enter correct data before submission, improving UX and data quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form with Validation -->
+  <section class="feature">
+    <h2>📧 Contact Form (with Custom Validation)</h2>
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="John Doe" required />
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="john@example.com" required />
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Min 8 characters" required />
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" required />
+        <span class="error-msg"></span>
+      </div>
+
+      <button type="submit">Submit Form</button>
+      <p id="form-success" class="success-msg"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
